@@ -6,7 +6,11 @@
         {{content[activeIdx]}}
       </p>
       <br>
-      <nuxt-img :src="contentImg[activeIdx]" width="500" />
+      <nuxt-img :src="contentImg[activeIdx]" width="500" class="mb-10 block" />
+      <img
+        :src="require(`~/static${contentImg[activeIdx]}`)"
+        width="500"
+      />
     </div>
   </div>
 </template>
